@@ -11,6 +11,7 @@ local num7 = 0
 local num8 = 0
 local num9 = 0
 local num10 = 0
+local num11 = 0
 
 for i,v in pairs(Player.Backpack:GetChildren()) do
         if v.Name == "Diamond" then
@@ -42,6 +43,9 @@ for i,v in pairs(Player.Backpack:GetChildren()) do
         end
         if v.Name == "Pure Rokakaka" then
             num10 = num10 + 1
+        end
+        if v.Name == "Mysterious Arrow" then
+            num11 = num11 + 1
         end
 
 end
@@ -93,6 +97,11 @@ end
         end
         if num10 == 10 then
             Player.Backpack:FindFirstChild("Pure Rokakaka").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num11 == 25 then
+            Player.Backpack:FindFirstChild("Mysterious Arrow").Parent = game:GetService("Workspace").Living[Player.Name]
             wait()
                 game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
         end
