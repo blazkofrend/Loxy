@@ -1,0 +1,98 @@
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer
+
+local num1 = 0
+local num2 = 0
+local num3 = 0
+local num4 = 0
+local num5 = 0
+local num6 = 0
+local num7 = 0
+local num8 = 0
+local num9 = 0
+local num10 = 0
+
+for i,v in pairs(Player.Backpack:GetChildren()) do
+        if v.Name == "Diamond" then
+            num1 = num1 + 1
+        end
+        if v.Name == "Gold Coin" then
+            num2 = num2 + 1
+        end
+        if v.Name == "Steel Ball" then
+            num3 = num3 + 1
+        end
+        if v.Name == "Rib Cage of The Saint's Corpse" then
+            num4 = num4 + 1
+        end
+        if v.Name == "Stone Mask" then
+            num5 = num5 + 1
+        end
+        if v.Name == "Quinton's Glove" then
+            num6 = num6 + 1
+        end
+        if v.Name == "Ancient Scroll" then
+            num7 = num7 + 1
+        end
+        if v.Name == "Zepellin's Headband" then
+            num8 = num8 + 1
+        end
+        if v.Name == "Dio's Diary" then
+            num9 = num9 + 1
+        end
+        if v.Name == "Pure Rokakaka" then
+            num10 = num10 + 1
+        end
+
+end
+
+    if num1 == 30 then
+                Player.Backpack:FindFirstChild("Diamond").Parent = game:GetService("Workspace").Living[Player.Name]
+                wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num2 == 45 then
+            Player.Backpack:FindFirstChild("Gold Coin").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num3 == 10 then
+            Player.Backpack:FindFirstChild("Steel Ball").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num4 == 10 then
+            Player.Backpack:FindFirstChild("Rib Cage of The Saint's Corpse").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num5 == 10 then
+            Player.Backpack:FindFirstChild("Stone Mask").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num6 == 10 then
+            Player.Backpack:FindFirstChild("Quinton's Glove").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num7 == 10 then
+            Player.Backpack:FindFirstChild("Ancient Scroll").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num8 == 10 then
+            Player.Backpack:FindFirstChild("Zepellin's Headband").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num9 == 10 then
+            Player.Backpack:FindFirstChild("Dio's Diary").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
+        if num10 == 10 then
+            Player.Backpack:FindFirstChild("Pure Rokakaka").Parent = game:GetService("Workspace").Living[Player.Name]
+            wait()
+                game:GetService("Players").LocalPlayer.Character.RemoteEvent:FireServer("EndDialogue",{["NPC"] = "Merchant",["Option"] = "Option1",["Dialogue"] = "Dialogue5"})
+        end
